@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Leitor/Gerador de QRCode</string>
+    <string name="txtGerarQR">Gerar QR Code</string>
+    <string name="txtLerQR">Ler QR Code</string>
+    <string name="txtGerar">Gerar</string>
+    <string name="txtSobre">Sobre</string>
+</resources>

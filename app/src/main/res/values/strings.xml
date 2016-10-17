@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QRCode Reader/Generator</string>
+    <string name="txtGerarQR">Generate QR Code</string>
+    <string name="txtLerQR">Read QR Code</string>
+    <string name="txtGerar">Generate</string>
+    <string name="txtSobre">About</string>
+</resources>
