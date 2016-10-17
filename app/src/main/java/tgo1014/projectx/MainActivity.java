@@ -9,11 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.mikepenz.aboutlibraries.Libs;
+import com.mikepenz.aboutlibraries.LibsBuilder;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    static final String ACTION_SCAN = "com.google.zxing.client.android.SCAN";
     private Button btnGerarQR;
     private Button btnLerQR;
-    static final String ACTION_SCAN = "com.google.zxing.client.android.SCAN";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,13 +50,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 break;
             case R.id.txtSobre:
-                AlertDialog.Builder sobre = new AlertDialog.Builder(this);
 
-                sobre.setMessage("Desenvolvido por Tiago Araujo");
-                sobre.setCancelable(true);
-
-                AlertDialog mostrarSobre = sobre.create();
-                mostrarSobre.show();
+                new LibsBuilder()
+                        //provide a style (optional) (LIGHT, DARK, LIGHT_DARK_TOOLBAR)
+                        .withActivityStyle(Libs.ActivityStyle.LIGHT_DARK_TOOLBAR)
+                        .withAboutIconShown(true)
+                        .withAboutVersionShown(true)
+                        .withLicenseShown(true)
+                        .withAboutDescription(getString(R.string.strDesenvolvidoPor) + "<br>" +
+                                getString(R.string.strFeedback) + "tgo1014@gmail.com")
+                        .start(this);
                 break;
         }
     }

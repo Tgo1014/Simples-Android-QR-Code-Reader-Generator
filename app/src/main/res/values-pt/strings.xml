@@ -5,4 +5,6 @@
     <string name="txtLerQR">Ler QR Code</string>
     <string name="txtGerar">Gerar</string>
     <string name="txtSobre">Sobre</string>
+    <string name="strDesenvolvidoPor">Desenvolvido por Tiago Araujo</string>
+    <string name="strFeedback">"Envie feedback para "</string>
 </resources>
