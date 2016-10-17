@@ -23,3 +23,7 @@
     public static int d(...);
     public static int e(...);
 }
+-keep class .R
+-keep class **.R$* {
+    <fields>;
+}
